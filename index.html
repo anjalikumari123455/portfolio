@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="portfolio.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+  <div class="container">
     <!-- //-------------------header......// -->
     <div class="header">
       <a href="#" class="logo">Portfolio</a>
+      <div class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
       <!-- <i class="fa-solid fa-bars"></i> -->
-      <nav class="navbar">
-        <a herf="#home">Home</a>
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#service">Services</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -31,15 +32,10 @@
         <h3>I'm <span>Full-stack developer</span></h3>
         <p>
           I'm currently building my skills HTML, CSS, js. This portfolio is a
-          collection of my practice work,<br /> mini projects
-          and everything I’m learning along the way.
+          collection of my practice work, mini projects
+          and everything I'm learning along the way.
         </p>
-        <div class="social-media">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+
         <a href="#" class="btn">Download cv</a>
       </div>
       <div class="home-img">
@@ -49,12 +45,10 @@
 
     <!-- --------------about----------------- <section----------------- -->
     <div class="about" id="about">
-      <div class="about-img">
-        <img src="./71efb312-f02d-48c7-8e01-9eadc2f8f67b.jpg" />
-      </div>
+
       <div class="about-content">
         <h2 class="heading">ABOUT <span>Me</span></h2>
-        <h3>Full-stack developer</h3>
+
         <p>
           I'm a full-stack web developer solving complex problems with clean and
           efficient code. I specialize in building responsive, user-friendly web
@@ -63,8 +57,69 @@
           what's possible on the web.
         </p>
       </div>
+      <div class="skill">
+        <h2>Tech <span>Stack</span></h2>
+        <div class="alllist">
+          <div class="list">HTML</div>
+          <div class="list">CSS</div>
+          <div class="list">JavaScript</div>
+          <div class="list">Node.js</div>
+          <div class="list">Express</div>
+          <div class="list">MongoDB </div>
+          <div class="list">EJS</div>
+          <div class="list">Git</div>
+
+        </div>
+      </div>
     </div>
-  
+
+    <!-- //--------------------education----------------------------- -->
+    <div class="education" id="education">
+      <div class="education-content">
+        <h2 class="heading"> Edu<span>cation</span></h2>
+
+        <h1>Master in computer application</h1>
+        <p>2023-2025</p>
+        <h1>Diploma In computer Application</h1>
+        <p>2022-2023</p>
+        <h1>Bachelor of Science </h1>
+        <p>2019-2022</p>
+        <h1>12TH</h1>
+        <P>2017-2018</P>
+        <h1>10TH</h1>
+        <p>2015-2016</p>
+      </div>
+
+    </div>
+      <!-- ---------------------service---------------- -->
+    <div class="service" id="service">
+    <h2 class="heading"> Our<span>Services</span></h2>
+      <div class="service-content">
+    
+        <div class="box">
+          <h3>Web Development</h3>
+          <p>Custom websites built using HTML, CSS, JavaScript, Node.js & MongoDB for businesses and personal brands.
+            I specialize in creating full-stack web apps that are fast, secure, and responsive. From portfolio sites to
+            e-commerce platforms, I ensure SEO optimization and mobile compatibility.
+
+          </p>
+        </div>
+        <div class="box">
+          <h3>Responsive Website Design</h3>
+          <p>I design modern, mobile-first UI/UX interfaces that work seamlessly on all devices and screen sizes.</p>
+        </div>
+  <div class="box">
+          <h3>Digital Marketing</h3>
+          <p>Social media campaigns, SEO strategies, and analytics to grow your online visibility and brand awareness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
     <!-- ......................contact............ -->
     <div class="contact" id="contact">
       <h2 class="heading">Contact<span>Me</span></h2>
@@ -75,24 +130,47 @@
         </div>
         <div class="input-box">
           <input type="number" placeholder="Mobile Number" />
-         
+
         </div>
         <textarea name="" id="" placeholder="Your Message"></textarea>
         <input type="submit" value="send message" class="btn" />
       </form>
     </div>
-    <!-- -------------footer---------- -->
-    <div class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy:2025 by @anjali| All Rights Reserved</p>
-      </div>
-      
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <!-- -------------footer---------- -->
+  <div class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy:2025 by @anjali| All Rights Reserved</p>
     </div>
-  </body>
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Message sent successfully!");
-});
-  </script>
+
+  </div>
+  </div>
+
+</body>
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.getElementById("navbar");
+
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Message sent successfully!");
+  });
+</script>
+
 </html>

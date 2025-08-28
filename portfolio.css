@@ -8,10 +8,10 @@
   font-family: sans-serif;
 }
 
-
 body {
-  background:  #0f0219;
+  background: #0f0219;
   color: #fff;
+  padding: 70px 70px 70px 70px;
 }
 
 .header {
@@ -20,17 +20,16 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem;
-  background:   #080221;
+  background: #080221;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 100; */
 }
 .logo {
   font-size: 35px;
   color: #fff;
   font-weight: 700;
-  cursor:pointer;
+  cursor: pointer;
 }
 .navbar a {
   font-size: 25px;
@@ -39,30 +38,32 @@ body {
   font-weight: 700;
 }
 
-.navbar a:hover
- {
-  color: #816b6b;
+.navbar a:hover {
+  color: #6483d1;
 }
 
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 80px;
+  
 }
 .home-content h3 {
   font-size: 60px;
- 
+  color: #59b2f4;
+}
+.home-content h2 {
+  font-size: 40px;
 }
 span {
   color: #59b2f4;
 }
 .home-content h1 {
   font-size: 50px;
-  
 }
 .home-img img {
-  width: 25vw;
+  width: 100%;
   border-radius: 50%;
   margin-left: 40px;
 }
@@ -70,70 +71,67 @@ span {
 .home-content p {
   font-size: 20px;
 }
-.social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border: 2px solid #59b2f4;
-  font-size: 2rem;
-  color:#4d82ad;
-  margin: 30px;
-  transition: 2s ease;
-}
-.social-media a:hover {
-  background-color: #59b2f4;
-  color: #262b40;
-  box-shadow: 0 0 1rem #59b2f4;
-}
+
 .btn {
   display: inline-block;
   padding: 20px;
-  background-color:#1f6295;
+  background-color: #1f6295;
   border-radius: 66px;
-font-size:24px ;
+  font-size: 24px;
   color: white;
 }
 .about {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 29px;
-  margin-top: 470px;
+  margin-top: 80px;
 }
-.about-img img {
-  width: 450px;
-  border-radius: 50%;
-  margin-left: 20px;
-}
+
 .heading {
   text-align: center;
   font-size: 70px;
 }
 .about-content h2 {
-  text-align: left;
+  text-align: center;
   line-height: 1.2;
 }
-.about-content h3 {
-  font-size: 2.4rem;
-}
+
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem;
 }
 
-.contact h2 {
- margin-top: 200px;
-}
-.contact form {
-  width:30%;
-  margin: 10px auto;
+.skill h2 {
+  font-size: 50px;
   text-align: center;
-  
+}
+.alllist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 20px;
 }
 
+.list {
+  background: #010816;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  border: 3px solid #2a2d33;
+  box-shadow: 0px 0px 10px #888888;
+}
+.list:hover {
+  background-color: #487e89;
+}
+
+.contact h2 {
+  margin-top: 200px;
+}
+.contact form {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
 
 .contact form .input-box input,
 .contact form textarea {
@@ -141,9 +139,9 @@ font-size:24px ;
   padding: 1rem;
   font-size: 1.6rem;
   color: black;
-  background:lavender;
+  background: lavender;
   border-radius: 20px;
- margin: 10px;
+  margin: 10px;
 }
 .contact form .btn {
   cursor: pointer;
@@ -156,4 +154,202 @@ font-size:24px ;
   font-size: 20px;
   text-align: center;
   padding: 20px;
+}
+
+.menu-icon {
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+
+
+    
+
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+   
+  }
+p{
+  text-align: justify;
+}
+  .home-content {
+    margin-bottom: 30px;
+     
+  }
+
+  .home-img img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .home-content h3 {
+    font-size: 30px;
+  }
+
+  .home-content h2 {
+    font-size: 26px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+ 
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #0e021b;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 100;
+
+    
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+ 
+  .contact form .input-box {
+    flex-direction: column;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    font-size: 16px;
+    width: 100%;
+  }
+ 
+  .list {
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .skill h2 {
+    font-size: 30px;
+  }
+ 
+  .footer-text {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .education-content {
+    padding: 0 10px;
+  }
+
+  .education-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .education-content p {
+    font-size: 0.95rem;
+  }
+  .service .heading {
+    font-size: 2rem;
+  }
+
+  .service-content .box {
+    padding: 20px;
+  }
+}
+/* Education Section */
+.education {
+background-color: #050114;
+  padding: 90px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.education .heading {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.education-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.education-content h1 {
+  font-size: 1.4rem;
+  color:white;
+  margin-top: 20px;
+}
+
+.education-content p {
+  font-size: 1rem;
+  color:lightblue;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+/* -------- Service Section Styles -------- */
+.service {
+  background-color: #060216;
+   padding: 90px 20px;
+ margin-top: 80px;
+}
+
+.service-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* .service .heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+} */
+
+.service .heading span {
+  color: #1f6295; 
+}
+
+.service-content .box {
+  background-color: #02091a;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-content .box:hover {
+  transform: translateY(-5px);
+}
+
+.service-content .box h3 {
+  font-size: 1.8rem;
+  color:white;
+  margin-bottom: 15px;
+}
+
+.service-content .box p {
+  font-size: 20px;
+  color:white;
+  line-height: 1.6;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
