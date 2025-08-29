@@ -258,46 +258,8 @@ width: 300px;
 }
 
 
-@media (max-width: 600px) {
-  .Project h1 {
-    font-size: 2rem;
-  }
 
-  .Project .project1 {
-    padding: 15px;
-  }
 
-  .Project .project1 h3 {
-    font-size: 1.2rem;
-  }
-
-  .Project .project1 p {
-    font-size: 0.95rem;
-  }
-
-  .Project .project1 button {
-    font-size: 0.9rem;
-    padding: 10px 18px;
-  }
-
-  #Education h1 {
-    font-size: 2rem;
-  }
-
-  .edu-container .card {
-    max-width: 100%;
-  }
-
-  .edu-container .card h3 {
-    font-size: 1.1rem;
-  }
-
-  .edu-container .card p {
-    font-size: 0.95rem;
-  }
-}
-
-/* /------------------contact----------------/ */
 
 .Contact{
   margin-top: 30px;
@@ -335,18 +297,10 @@ width: 300px;
   color: #6483d1;
 }
 
-/* ----------contact responsive----- */
 
-@media (max-width: 600px) {
-  #end h1 {
-    font-size: 2rem;
-  }
 
-  .click {
-    font-size: 1rem;
-  }
-}
-  /*----------- footer */
+
+ 
 
 .footer-text {
   font-size: 20px;
@@ -369,97 +323,127 @@ width: 300px;
     
 
 
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    text-align: center;
-   
-  }
-p{
-  text-align: justify;
-}
-  .home-content {
-    margin-bottom: 30px;
-     
-  }
 
-  .home-img img {
-    width: 70%;
-    margin: 0 auto;
+
+
+/* ---------- RESPONSIVE LAPTOP (≥1024px) ---------- */
+@media (min-width: 1024px) {
+  .home {
+    flex-direction: row;
+    gap: 40px;
   }
 
   .home-content h3 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
-  .home-content h2 {
+  .home-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .alllist {
+    flex-direction: row;
+  }
+
+  .edu-container {
+    flex-direction: row;
+  }
+}
+
+
+/* ---------- RESPONSIVE TABLET + MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+
+  .logo {
     font-size: 26px;
   }
 
-  .home-content p {
-    font-size: 18px;
+  .menu-icon {
+    display: block;
   }
 
-  .btn {
-    font-size: 18px;
-    padding: 12px 20px;
-  }
- 
   .navbar {
-    display: none;
-    flex-direction: column;
     position: absolute;
-    top: 80px;
-    right: 20px;
-    background-color: #0e021b;
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 100;
-
-    
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #080221;
+    flex-direction: column;
+    align-items: center;
+    display: none;
   }
 
   .navbar.active {
     display: flex;
   }
 
-  .menu-icon {
-    display: block;
-  }
- 
-  
- 
-  .list {
-    font-size: 16px;
-    padding: 0.5rem 0.8rem;
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 20px;
   }
 
-  .skill h2 {
-    font-size: 30px;
-  }
- 
-  .footer-text {
-    font-size: 16px;
-    padding: 10px;
-  }
-  .education-content {
-    padding: 0 10px;
+  .home {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
   }
 
-  .education-content h1 {
-    font-size: 1.2rem;
+  .home-img img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
   }
 
-  .education-content p {
-    font-size: 0.95rem;
-  }
-  .service .heading {
-    font-size: 2rem;
+  .home-content h3 {
+    font-size: 36px;
   }
 
-  .service-content .box {
+  .home-content h2 {
+    font-size: 28px;
+  }
+
+  .about {
     padding: 20px;
   }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  .alllist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Project .project1 {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .Project .project1 h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
 }
-
-
