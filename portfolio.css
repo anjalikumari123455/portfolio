@@ -15,6 +15,7 @@ body {
 }
 
 .header {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -26,17 +27,26 @@ body {
   align-items: center;
 }
 .logo {
-  font-size: 35px;
-  color: #ffffff;
+  font-size: 2rem;
   font-weight: 700;
-  cursor: pointer;
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  user-select: none;
 }
+.logo:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
 .navbar a {
   font-size: 25px;
   color: #fff;
   margin-left: 4rem;
   font-weight: 700;
 }
+
 
 .navbar a:hover {
   color: #6483d1;
@@ -63,10 +73,11 @@ span {
   font-size: 50px;
 }
 .home-img img {
-width: 300px;
+    width: 300px;
     height: 300px;
     border-radius: 30%;
-    border: 2px #1f6295
+    border: 2px #1f6295;
+    box-shadow: 0 8px 30px rgba(184, 208, 161, 0.2);
 }
 
 .home-content p {
